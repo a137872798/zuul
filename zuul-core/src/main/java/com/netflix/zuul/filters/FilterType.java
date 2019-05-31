@@ -23,6 +23,9 @@ package com.netflix.zuul.filters;
  */
 public enum FilterType
 {
+    /**
+     * 这3个枚举 应该是 对应原来的 pre route post
+     */
     INBOUND("in"), ENDPOINT("end"), OUTBOUND("out");
 
     private final String shortName;

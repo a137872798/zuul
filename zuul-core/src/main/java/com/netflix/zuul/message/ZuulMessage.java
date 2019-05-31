@@ -31,6 +31,7 @@ import java.util.List;
  * User: Mike Smith
  * Date: 7/16/15
  * Time: 12:22 AM
+ *      抽象出 zuul 的 消息属性
  */
 public interface ZuulMessage extends Cloneable
 {

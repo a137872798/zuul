@@ -26,6 +26,7 @@ import rx.Observable;
  * @author Mikey Cohen
  *         Date: 10/27/11
  *         Time: 3:03 PM
+ *         记录过滤器的具体信息 比如 过滤器名字 使用的时机
  */
 public interface ZuulFilter<I extends ZuulMessage, O extends ZuulMessage> extends ShouldFilter<I>
 {
@@ -38,6 +39,7 @@ public interface ZuulFilter<I extends ZuulMessage, O extends ZuulMessage> extend
      * important for a filter. filterOrders do not need to be sequential.
      *
      * @return the int order of a filter
+     *      过滤器执行顺序
      */
     int filterOrder();
 
@@ -46,6 +48,7 @@ public interface ZuulFilter<I extends ZuulMessage, O extends ZuulMessage> extend
      * "end" for routing to an origin, "out" for post-routing filters.
      *
      * @return FilterType
+     *      代表过滤器类型
      */
     FilterType filterType();
 
